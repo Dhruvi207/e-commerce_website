@@ -1,0 +1,83 @@
+.popular {
+
+background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+
+border-radius: 10px;
+
+}
+
+
+.popular-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #343a40;
+}
+
+.popular-hr {
+  width: 120px;
+  height: 4px;
+  background-color: #343a40;
+  border-radius: 5px;
+}
+
+.popular-item .item-container {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.popular-item .item-container:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.popular-item .item-container img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.popular-item .item-container:hover img {
+  transform: scale(1.05);
+}
+
+/* Consistent text styles for item name and price */
+.popular-item .item-container .item-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.popular-item .item-container .item-price {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #007bff;
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  .popular-heading {
+    font-size: 2rem;
+  }
+
+  .popular-hr {
+    width: 80px;
+    height: 3px;
+  }
+
+  .popular-item .item-container img {
+    max-height: 150px;
+  }
+}

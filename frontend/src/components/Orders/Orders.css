@@ -1,0 +1,157 @@
+.orders {
+  padding: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.orders-title h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #114e70;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.order-card {
+  display: flex;
+  flex-direction: column;
+  background: #e6f4fb;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 97, 145, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.order-card:hover {
+  transform: translateY(-2px);
+}
+
+.order-left {
+  display: flex;
+  gap: 16px;
+}
+
+.order-image {
+  width: 60px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #b2dff5;
+}
+
+.order-info {
+  flex: 1;
+}
+
+.order-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #114e70;
+  margin-bottom: 4px;
+}
+
+.order-meta {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-size: 0.95rem;
+  color: #4a4a4a;
+  margin-bottom: 6px;
+}
+
+.order-date,
+.order-payment {
+  font-size: 0.9rem;
+  color: #333;
+  margin-top: 4px;
+}
+
+.order-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.order-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #51c878;
+}
+
+.status-text {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #0a614b;
+}
+
+.track-order-btn {
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid #114e70;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #114e70;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.track-order-btn:hover {
+  background-color: #114e70;
+  color: #ffffff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .order-card {
+    padding: 16px;
+  }
+
+  .order-left {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .order-right {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .orders-title h1 {
+    font-size: 1.5rem;
+  }
+
+  .order-name {
+    font-size: 1rem;
+  }
+
+  .order-meta {
+    font-size: 0.85rem;
+  }
+
+  .order-date,
+  .order-payment {
+    font-size: 0.85rem;
+  }
+
+  .track-order-btn {
+    font-size: 0.85rem;
+    padding: 6px 12px;
+  }
+}

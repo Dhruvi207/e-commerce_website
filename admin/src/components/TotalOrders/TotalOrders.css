@@ -1,0 +1,133 @@
+.totalorders {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.totalorders h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.order-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.order-img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.order-info {
+  flex: 2;
+  min-width: 220px;
+}
+
+.order-info p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.user-name {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.order-meta {
+  flex: 1.5;
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.order-meta p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.order-amount {
+  flex: 1;
+  font-weight: bold;
+  font-size: 16px;
+  min-width: 70px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-status-select {
+  flex: 1;
+  min-width: 160px;
+  padding: 6px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #f9f9f9;
+}
+
+/* -------- Responsive Styles -------- */
+
+@media (max-width: 768px) {
+  .order-card {
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .order-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .order-info,
+  .order-meta,
+  .order-amount,
+  .order-status-select {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .order-amount {
+    font-size: 15px;
+    justify-content: flex-start;
+  }
+
+  .order-status-select {
+    margin-top: 10px;
+  }
+
+  .user-name {
+    font-size: 14px;
+  }
+
+  .order-info p,
+  .order-meta p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .order-card {
+    padding: 12px;
+  }
+
+  .order-status-select {
+    font-size: 13px;
+  }
+}

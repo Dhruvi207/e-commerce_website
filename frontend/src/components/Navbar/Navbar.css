@@ -1,0 +1,70 @@
+.navbar .nav-item {
+  margin-left: 15px;
+}
+.navbar{
+   background: linear-gradient(135deg, #f5f7fa 0%, #9fb5da 100%);
+}
+.navbar .nav-link {
+  color: #626262;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-item.active .nav-link,
+.navbar .nav-link:hover {
+  color: #ff4141;
+  font-weight: 600;
+}
+.for-user{
+    width: 100px;
+    background-color: transparent;
+    height: 50px;
+    color: #626262;
+  font-size: 18px;
+  font-weight: 500;
+    margin: 20px;
+    border: none;
+   
+    border-radius: 10px;
+     
+    
+}
+.navbar .btn {
+  background: linear-gradient(90deg, #ff3b3b 0%, #ff9a9a 100%);
+  border: none;
+  padding: 5px 5px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: black;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  transition: background 0.4s ease;
+  box-shadow: 0 8px 20px rgba(255, 59, 59, 0.5);
+}
+
+.navbar .btn:hover{
+    background: linear-gradient(90deg, #ff9a9a 0%, #ff3b3b 100%);
+  box-shadow: 0 12px 30px rgba(255, 59, 59, 0.7);
+   
+}
+
+.navbar img {
+  width: 30px;
+}
+
+.navbar .badge {
+  font-size: 12px;
+  padding: 4px 6px;
+}
+
+/* Mobile spacing inside hamburger */
+@media (max-width: 991.98px) {
+  .navbar-collapse .btn,
+  .navbar-collapse .position-relative {
+    width: auto;
+  }
+}

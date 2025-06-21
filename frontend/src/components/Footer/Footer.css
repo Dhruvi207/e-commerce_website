@@ -1,0 +1,81 @@
+.footer {
+  /* background: linear-gradient(135deg, #e8f1fc, #d0e2ff); Soft blue gradient */
+background: linear-gradient(135deg, #1d3a64, hwb(220 10% 69%));
+  color: white;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-logo img.footer-logo-img {
+  width: 50px;
+  height: auto;
+}
+
+.brand-name {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+}
+
+.footer-links {
+  list-style: none;
+  gap: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  padding-left: 0;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-links li {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer-links li:hover {
+  color: #007bff; /* Bootstrap primary */
+}
+
+.footer-icon-container {
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid #cbd6e2;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-icon-container img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-icon-container:hover {
+  transform: scale(1.1);
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.footer-icon-container:hover img {
+  filter: brightness(0) invert(1); /* Turn icon white on hover */
+}
+
+.footer hr {
+  width: 100%;
+  border: none;
+  height: 2px;
+  background-color: #b0c4de;
+  border-radius: 5px;
+  margin-top: 40px;
+}
+
+.footer p {
+  color: white;
+  font-size: 0.95rem;
+  margin-top: 15px;
+}
